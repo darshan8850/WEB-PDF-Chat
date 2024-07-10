@@ -1,0 +1,16 @@
+langchain
+langchain-community==0.0.19
+bs4
+selenium
+webdriver-manager
+pymongo
+streamlit
+streamlit-chat
+webdriver-manager
+pymupdf
+fastembed
+chromadb
+playwright
+html2text
+pypdf
+pymupdf
