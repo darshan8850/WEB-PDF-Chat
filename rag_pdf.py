@@ -15,10 +15,10 @@ from datetime import datetime
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# MongoDB client setup
-client = MongoClient("mongodb://localhost:27017")
+client = MongoClient("mongodb://mongodb:27017")  # Update to use the service name from Docker Compose
 db = client["logging_db"]
 collection = db["query_logs"]
+
 
 def log_to_mongodb(question, answer):
     log_entry = {

@@ -6,7 +6,19 @@ services:
       - ./data/ollama:/root/.ollama
     ports:
       - 11434:11434
+  
   streamlit-app:
     image: braindiary_rag
     ports:
       - 8501:8501
+    depends_on:
+      - mongodb
+    environment:
+      - MONGO_URL=mongodb://mongodb:27017/logging_db  # Environment variable for MongoDB URL
+
+  mongodb:
+    image: mongo:latest
+    ports:
+      - 27017:27017
+    volumes:
+      - ./data/mongo:/data/db

@@ -13,4 +13,3 @@ chromadb
 playwright
 html2text
 pypdf
-pymupdf
