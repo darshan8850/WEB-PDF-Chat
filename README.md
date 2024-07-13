@@ -29,13 +29,11 @@ Build the Docker image for the Brain Diary RAG application:
 
 '''bash 
 docker build . -t braindiary_rag
-'''
 
 Verify the Docker image was successfully built by listing the available images:
 
 '''bash 
 docker images
-'''
 
 
 #### Step 5: Run Docker Compose
@@ -44,14 +42,12 @@ Start the application by running Docker Compose:
 
 '''bash
 docker-compose up
-'''
 
 
 This command will start both the Ollama and MongoDB containers.
 Check the status of the containers:
 '''bash 
 docker-compose ps
-'''
 
 
 #### Step 6: Download Required Model
@@ -60,7 +56,6 @@ Access the Ollama container and download the required model:
 
 '''bash 
 docker exec -it <container_name> ollama run phi3:instruct
-'''
 
 #### Step 7: Access Streamlit Application
 
