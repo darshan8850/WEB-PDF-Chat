@@ -1,6 +1,10 @@
-# dockerize_braindiary_rag
+# WEB & PDF_rag
 
-# Brain Diary RAG Application README
+#  RAG Application README
+
+
+
+https://github.com/user-attachments/assets/26ea6be4-cee2-47e1-b02f-153409fff92c
 
 
 ### Prerequisites
